@@ -1,17 +1,14 @@
 // 小手調べ
 function setup(){
-  createCanvas(100, 100);
+  createCanvas(200, 200);
   noFill();
   for(let i = 0; i < 10; i++){
-    let size = (i + 1)*10;
-    noFill();
+    let size = (i + 1)*20;
     if(i < 5){
       stroke(255,0,0);
     } else {
       stroke(0,0,255);
     }
-    ellipse(50, 50, size, size);
-
-    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう
+    ellipse(100, 100, size, size);
   }
 }

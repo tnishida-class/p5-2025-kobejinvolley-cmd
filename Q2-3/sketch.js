@@ -2,7 +2,7 @@
 function setup() {
   createCanvas(270, 180);
   noStroke();
-  background(255);
+  noFill();
 
   const d = height / 9; // 縞1本の太さ
   const blue = color(0, 51, 160);
@@ -12,10 +12,7 @@ function setup() {
     // BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう
     if(i % 2 == 0){
       fill(blue);
-      rect(0, i * d, width, (i + 1) * d);
-    } else {
-      fill(255);
-      rect(0, i * d, width, (i + 1) * d); 
+      rect(0, i * d, width, d);
     }
 
   // 十字を描く
